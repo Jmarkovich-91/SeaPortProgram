@@ -1,0 +1,27 @@
+// File: aSPaj.txt
+// Data file for SeaPort projects
+// Date: Sat Jul 09 17:59:17 EDT 2016
+
+// port   name index parent(null)
+//    port   <string> <int> <int>
+port Xiangtan 10003 0
+
+
+// dock   name index parent(port)
+//    dock   <string> <int> <int>
+  dock Pier_30 20030 10003 40048
+
+
+// cship  name index parent(dock/port) weight length width draft cargoWeight cargoVolume cargoValue
+//    cship  <string> <int> <int> <double> <double> <double> <double> <double> <double> <double>
+    pship               Shinto 30014 20030 172.82 233.60 106.32 25.42 1492 496 496
+
+
+// pship  name index parent(dock/port) weight length width draft numPassengers numRooms numOccupied
+//    pship  <string> <int> <int> <double> <double> <double> <double> <int> <int> <int>
+    cship           Untimelier 40017 10003 175.16 300.33 49.89 26.39 35.66 187.27 70.85
+
+
+// person name index parent skill
+//    person <string> <int> <int> <string>
+    person              Suzanne 50010 10003 electrician
